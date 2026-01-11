@@ -4,7 +4,7 @@ This repository houses a web application designed for the creation, conversion, 
 
 <img width="1133" height="911" alt="Screenshot 2026-01-10 at 22 14 33" src="https://github.com/user-attachments/assets/a0971d4a-2d47-4d2f-a327-3099e3f10230" />
 
-> *My personal artwork .TZX as rendered by an online emulator.*
+> *Personal artwork .TZX as rendered by an online emulator.*
 
 ## Rationale and Utility
 
