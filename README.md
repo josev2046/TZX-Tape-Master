@@ -1,4 +1,4 @@
-# JV's TZX Master: Technical Documentation
+# TZX Master: Technical Documentation
 
 This repository houses my humble web app for creating, converting, and exporting artwork specifically for the **Sinclair ZX Spectrum**. I am hoping it serves as a sophisticated bridge between modern high-definition image formats and the intricate 8-bit machine-code structures of the 1980s.
 
