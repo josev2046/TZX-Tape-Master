@@ -10,7 +10,7 @@ This repository houses a web application designed for the creation, conversion, 
 
 The Sinclair ZX Spectrum (1982) remains a vibrant platform for retro-coding and digital art, yet its display architecture is famously idiosyncratic. This project was born from a desire to simplify the "pipeline" required to get a modern image onto original hardware. 
 
-Developing this tool required addressing the Spectrum’s specific technical constraints—notably its non-linear memory layout and the "attribute clash" caused by its $8 \times 8$ colour blocks. The goal is to provide a reliable workflow for homebrew developers and artists to move from a modern bitmap to a genuine `.TZX` tape file that is ready to be loaded via a cassette interface or SD-card reader.
+Developing this tool required addressing the Spectrum’s specific technical constraints—notably its non-linear memory layout and the "attribute clash" caused by its $8 \times 8$ colour blocks. The goal is to provide a reliable workflow for homebrew developers and artists to move from a modern bitmap to a genuine `.TAP` or `.TZX` tape file that is ready to be loaded via a cassette interface or SD-card reader.
 
 <img width="1543" height="780" alt="JV's TZX Master Interface" src="https://github.com/user-attachments/assets/24125d65-37b2-4dd8-9cce-5d742fd6bd09" />
 
