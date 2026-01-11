@@ -1,0 +1,36 @@
+@startuml
+skinparam style strictuml
+skinparam monochrome true
+skinparam shadowing false
+
+actor User
+participant "Web Interface" as UI
+participant "Conversion Engine" as Engine
+participant "Memory Mapper" as Mapper
+participant "File Generator" as Export
+
+== Image Conversion Process ==
+
+User -> UI : Uploads photograph
+UI -> Engine : Initialises 'autoConvertImage'
+Engine -> Engine : Resizes image to 256 x 192
+Engine -> Engine : Calculates brightness for pixel data (Ink)
+Engine -> Engine : Identifies dominant colours for $8 \times 8$ blocks (Paper)
+Engine -> UI : Renders Spectrum-compliant preview
+
+== Manual Refinement ==
+
+User -> UI : Selects 'COL' tool and colour
+UI -> Engine : Updates attribute data for specific $8 \times 8$ block
+Engine -> UI : Redraws canvas with updated colour attributes
+
+== Data Export ==
+
+User -> UI : Selects 'Download TZX'
+UI -> Mapper : Requests 'generateSpectrumMemory'
+Mapper -> Mapper : Compiles 6,144 bytes of pixel data
+Mapper -> Mapper : Compiles 768 bytes of colour data
+Mapper -> Export : Passes 6,912-byte memory block
+Export -> Export : Wraps data in TZX header and checksums
+Export -> User : Delivers .tzx tape file
+@endum
