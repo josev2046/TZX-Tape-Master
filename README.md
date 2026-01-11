@@ -1,5 +1,7 @@
 # TZX Tape Master: Technical Documentation
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18216179.svg)](https://doi.org/10.5281/zenodo.18216179)
+
 This repository houses a web application designed for the creation, conversion, and export of artwork specifically for the **Sinclair ZX Spectrum**. It serves as a practical bridge between modern high-definition image formats and the unique 8-bit machine-code structures of the 1980s.
 
 <img width="1368" height="857" alt="a TZX bitmap conversion" src="https://github.com/user-attachments/assets/b9332932-5409-4868-93a1-93c6077b1418" />
