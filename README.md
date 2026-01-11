@@ -2,9 +2,11 @@
 
 This repository houses a web application designed for the creation, conversion, and export of artwork specifically for the **Sinclair ZX Spectrum**. It serves as a practical bridge between modern high-definition image formats and the unique 8-bit machine-code structures of the 1980s.
 
-<img width="1133" height="911" alt="Screenshot 2026-01-10 at 22 14 33" src="https://github.com/user-attachments/assets/a0971d4a-2d47-4d2f-a327-3099e3f10230" />
+<img width="1368" height="857" alt="a TZX bitmap conversion" src="https://github.com/user-attachments/assets/b9332932-5409-4868-93a1-93c6077b1418" />
 
-> *Personal artwork .TZX as rendered by an online emulator.*
+
+> *TZX Master example of bitmap converesion.*
+
 
 ## Rationale and Utility
 
