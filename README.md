@@ -1,12 +1,12 @@
 # JV's TZX Master: Technical Documentation
 
-This repository houses a specialised web application for creating, converting, and exporting artwork specifically for the **Sinclair ZX Spectrum**. It serves as a sophisticated bridge between modern high-definition image formats and the intricate 8-bit machine-code structures of the 1980s.
+This repository houses my humble web app for creating, converting, and exporting artwork specifically for the **Sinclair ZX Spectrum**. Am hoping it serves as a sophisticated bridge between modern high-definition image formats and the intricate 8-bit machine-code structures of the 1980s.
 
 ## Why on Earth an I doing this?
 
 The Sinclair ZX Spectrum is a cornerstone of computing history, at least for those of us of a given demographic and age, but its unique display architecture makes creating modern artwork for it an arduous task. This project was born from a desire to simplify that "pipeline." 
 
-Been pulling my hair a bit with this. Polishing it required overcoming the Spectrum’s notorious technical hurdles—specifically its non-linear memory layout and "attribute clash." The goal is to provide a seamless workflow for digital preservationists, homebrew developers, and retro-artists to move from a modern JPEG to a genuine `.TZX` tape file that can be loaded on 40-year-old hardware. Surely that must be worth it.
+I ust confess I've been pulling my hair a bit with this one. Polishing it required overcoming the Spectrum’s notorious technical hurdles—specifically its non-linear memory layout and "attribute clash." The goal is to provide a seamless workflow for digital preservationists, homebrew developers, and retro-artists to move from a modern JPEG to a genuine `.TZX` tape file that can be loaded on 40-year-old hardware. Surely that must be worth it.
 
 <img width="1543" height="780" alt="JV's TZX Master Interface" src="https://github.com/user-attachments/assets/24125d65-37b2-4dd8-9cce-5d742fd6bd09" />
 
