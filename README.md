@@ -4,7 +4,7 @@ This repository houses my humble web app for creating, converting, and exporting
 
 <img width="1133" height="911" alt="Screenshot 2026-01-10 at 22 14 33" src="https://github.com/user-attachments/assets/a0971d4a-2d47-4d2f-a327-3099e3f10230" />
 
-> *My rendered .TZX as seen in an online emulator.*
+> *My personal artwork .TZX as rendered by an online emulator.*
 
 ## Why am I doing this?
 
