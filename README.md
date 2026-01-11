@@ -2,7 +2,7 @@
 
 This repository houses my humble web app for creating, converting, and exporting artwork specifically for the **Sinclair ZX Spectrum**. I am hoping it serves as a sophisticated bridge between modern high-definition image formats and the intricate 8-bit machine-code structures of the 1980s.
 
-## Why on Earth am I doing this?
+## Why am I doing this?
 
 The Sinclair ZX Spectrum is a cornerstone of computing nostalgia—at least for those of us of a certain demographic and age—but its unique display architecture makes creating modern artwork for it an arduous task. This project was born from a desire to simplify that "pipeline," get on with the job, and have a pint. 
 
