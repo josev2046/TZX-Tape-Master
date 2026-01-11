@@ -5,7 +5,7 @@ This repository houses a web application designed for the creation, conversion, 
 <img width="1368" height="857" alt="a TZX bitmap conversion" src="https://github.com/user-attachments/assets/b9332932-5409-4868-93a1-93c6077b1418" />
 
 
-> *TZX Master example of bitmap converesion.*
+> *TZX Master example of bitmap conversion.*
 
 
 ## Rationale and Utility
