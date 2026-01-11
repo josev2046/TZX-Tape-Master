@@ -1,0 +1,2 @@
+# tzx-autocovert
+tzx autoconvert
