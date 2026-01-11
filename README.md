@@ -1,6 +1,6 @@
 # JV's TZX Master: Technical Documentation
 
-This repository contains a specialised web application for creating, converting, and exporting artwork for the Sinclair ZX Spectrum. It functions not just as a drawing tool, but as a bridge between modern image formats and 1980s machine-code data structures.
+This repository contains a specialised web application for creating, converting, and exporting artwork for the Sinclair ZX Spectrum. It functions not just as a drawing tool, but as a bridge between modern image formats and 1980s machine-code data structures. Been pulling my hair a bit, but here's what's going on behind the scenes:
 
 <img width="1543" height="780" alt="image" src="https://github.com/user-attachments/assets/24125d65-37b2-4dd8-9cce-5d742fd6bd09" />
 
