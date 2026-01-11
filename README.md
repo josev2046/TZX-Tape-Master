@@ -2,6 +2,10 @@
 
 This repository houses my humble web app for creating, converting, and exporting artwork specifically for the **Sinclair ZX Spectrum**. I am hoping it serves as a sophisticated bridge between modern high-definition image formats and the intricate 8-bit machine-code structures of the 1980s.
 
+<img width="1133" height="911" alt="Screenshot 2026-01-10 at 22 14 33" src="https://github.com/user-attachments/assets/a0971d4a-2d47-4d2f-a327-3099e3f10230" />
+
+> *My rendered .TZX as seen in an online emulator.*
+
 ## Why am I doing this?
 
 The Sinclair ZX Spectrum is a cornerstone of computing nostalgia—at least for those of us of a certain demographic and age—but its unique display architecture makes creating modern artwork for it an arduous task. This project was born from a desire to simplify that "pipeline," get on with the job, and have a pint. 
@@ -26,13 +30,14 @@ A "reverse-engineering" feature. It allows the user to paste Sinclair BASIC `POK
 The tool manages data exactly as the Zilog Z80 processor would.
 * **Non-Linear Memory Mapping:** Unlike modern displays, the Spectrum's screen memory is fragmented. This engine correctly maps coordinates to the 6,144-byte pixel area.
 
+
+
 * **Attribute Packing:** It handles the 768-byte "Attribute" block, which dictates the colour for every $8 \times 8$ pixel grid.
 
 ### 4. Tape Mastering Engines (`TAP` & `TZX`)
 To ensure the output is "hardware-ready," the system includes two mastering suites:
 * **TAP Generator:** Produces standard digital tape blocks with necessary headers and checksums.
 * **TZX Master:** A more advanced engine that generates high-fidelity tape images. It includes specific "pause" durations and signal blocks required to bypass the limitations of vintage loading routines.
-
 
 ---
 
