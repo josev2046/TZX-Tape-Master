@@ -16,7 +16,7 @@ The Sinclair ZX Spectrum (1982) remains a vibrant platform for retro-coding and 
 
 Developing this tool required addressing the Spectrum’s specific technical constraints—notably its non-linear memory layout and the "attribute clash" caused by its $8 \times 8$ colour blocks. The goal is to provide a reliable workflow for homebrew developers and artists to move from a modern bitmap to a genuine `.TAP` or `.TZX` tape file that is ready to be loaded via a cassette interface or SD-card reader.
 
-<img width="1543" height="780" alt="JV's TZX Master Interface" src="https://github.com/user-attachments/assets/24125d65-37b2-4dd8-9cce-5d742fd6bd09" />
+<img width="1494" height="1129" alt="image" src="https://github.com/user-attachments/assets/e4693f51-a7bc-4e41-9897-a7897255222c" />
 
 ---
 
