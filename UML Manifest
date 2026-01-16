@@ -1,5 +1,108 @@
 @startuml
 skinparam style strictuml
+skinparam shadowing false
+skinparam RoundCorner 10
+skinparam SequenceMessageAlignment center
+skinparam ResponseMessageBelowArrow true
+
+' Visual Styling for specific distinct areas
+skinparam sequence {
+    LifeLineBorderColor #444444
+    LifeLineBackgroundColor #White
+    ParticipantBorderColor #444444
+    ParticipantBackgroundColor #EFEFEF
+    BoxBackgroundColor #F9F9F9
+    BoxBorderColor #DDDDDD
+}
+
+actor User
+
+box "Client Layer" #FAFAFA
+    participant "Web Interface" as UI
+end box
+
+box "Core Logic" #F4F4F4
+    participant "Conversion Engine" as Engine
+    participant "Memory Mapper" as Mapper
+    participant "File Generator" as Export
+end box
+
+== Phase 1: Image Ingestion & Processing ==
+
+User -> UI : Uploads source photograph
+activate UI
+
+UI -> Engine : POST /autoConvert (ImageBlob)
+activate Engine
+
+    group Image Processing Strategy
+        Engine -> Engine : Resize to 256px x 192px (Nearest Neighbor)
+        Engine -> Engine : Calculate Luminance (Pixel/Ink Data)
+        Engine -> Engine : Quantize Colors to 8x8 Attribute Blocks
+    end
+
+Engine --> UI : Return JSON (Preview Base64)
+deactivate Engine
+
+UI -> User : Renders Spectrum-compliant preview
+deactivate UI
+
+== Phase 2: Manual Attribute Refinement ==
+
+opt User Refinement Loop
+    User -> UI : Selects 'COL' tool (Ink/Paper)
+    activate UI
+    
+    UI -> Engine : PATCH /updateBlock (Coords, AttrByte)
+    activate Engine
+    
+    Engine -> Engine : Re-calculate Attribute Block
+    Engine --> UI : Return Updated Block Data
+    deactivate Engine
+    
+    UI -> User : Redraws canvas area
+    deactivate UI
+end
+
+== Phase 3: Serialization & Export ==
+
+User -> UI : Clicks 'Download TZX'
+activate UI
+
+UI -> Mapper : Request Memory Dump
+activate Mapper
+
+    note right of Mapper
+        Standard Spectrum Screen:
+        6144 bytes (Bitmap) +
+        768 bytes (Attributes)
+        = 6912 bytes total
+    end note
+
+    Mapper -> Mapper : Serialize Bitmap Data (0x4000 - 0x57FF)
+    Mapper -> Mapper : Serialize Attribute Data (0x5800 - 0x5AFF)
+    
+    Mapper -> Export : Stream Binary Data (6912 bytes)
+    activate Export
+    
+    Export -> Export : Calculate Checksums (XOR)
+    Export -> Export : Encapsulate in TZX Header Blocks
+    
+    Export --> Mapper : Return .tzx File Object
+    deactivate Export
+
+Mapper --> UI : Return Download Stream
+deactivate Mapper
+
+UI -> User : Prompt File Save ("image.tzx")
+deactivate UI
+
+@enduml
+
+--
+
+@startuml
+skinparam style strictuml
 skinparam monochrome true
 skinparam shadowing false
 
