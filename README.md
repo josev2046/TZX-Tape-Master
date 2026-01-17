@@ -53,3 +53,7 @@ To ensure the output is hardware-compatible, the system includes two mastering s
 * **Attribute Constraints:** Maximum of two colours (one Ink, one Paper) per $8 \times 8$ block.
 * **Memory Layout:** 6,144 bytes (pixels) + 768 bytes (attributes).
 * **Output Standards:** Binary `.tap`, `.tzx`, and raw Z80 memory fragments (.bin).
+
+---
+**© 2026 Jose Velazquez. All Rights Reserved.**
+*SpecBooth™ is a trademark of Jose Velazquez.*
