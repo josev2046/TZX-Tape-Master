@@ -55,4 +55,5 @@ To ensure the output is hardware-compatible, the system includes two mastering s
 * **Output Standards:** Binary `.tap`, `.tzx`, and raw Z80 memory fragments (.bin).
 
 ---
-**© 2026 Jose Velazquez. All Rights Reserved.**
+**© 2026 Jose Velazquez.**
+*Licensed under the MIT License. See `LICENSE` for details.*
