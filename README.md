@@ -56,4 +56,3 @@ To ensure the output is hardware-compatible, the system includes two mastering s
 
 ---
 **© 2026 Jose Velazquez. All Rights Reserved.**
-*SpecBooth™ is a trademark of Jose Velazquez.*
